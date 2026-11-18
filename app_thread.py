@@ -168,10 +168,10 @@ if user_input:
     st.session_state["message_history"].append({
         "role": "user",
         "content": user_input
+    # Display the user's message in the chat interface
     })
 
 
-    # Display the user's message in the chat interface
     with st.chat_message("user"):
         st.text(user_input)
 
